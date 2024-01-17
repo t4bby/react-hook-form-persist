@@ -55,5 +55,8 @@
   "peerDependencies": {
     "react": ">= 16.3",
     "react-hook-form": ">= 6"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.21.0"
   }
 }

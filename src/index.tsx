@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { SetFieldValue } from 'react-hook-form'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export interface FormPersistConfig {
-  storage?: Storage;
+  storage?: typeof AsyncStorage;
   watch: (names?: string | string[]) => any;
   setValue: SetFieldValue<any>;
   exclude?: string[];
